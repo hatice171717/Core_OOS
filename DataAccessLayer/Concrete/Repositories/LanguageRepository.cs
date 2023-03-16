@@ -11,17 +11,19 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class LanguageRepository : ILanguageDAL
     {
-        Context c = new Context();
+       Context c = new Context();
        DbSet<Language> _object;
 
         public void Delete(Language p)
         {
-            throw new NotImplementedException();
+            _object.Remove(p);
+            c.SaveChanges();
         }
 
         public void Insert(Language p)
         {
-            throw new NotImplementedException();
+            _object.Add(p);
+            c.SaveChanges();
         }
 
         public List<Language> List()
@@ -31,7 +33,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(Language p)
         {
-            throw new NotImplementedException();
+            c.SaveChanges();
         }
     }
 }

@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ILanguageDAL
+    public interface ILanguageDAL:IRepositoryDal<Language>
     {
-        //CRUD
-        //Type Name();
-        //Listeleme
-        List<Language> List();
-        //Ekleme
-        void Insert(Language p);
-        //Güncelleme
-        void Update(Language p);    
-        //Silme
-        void Delete(Language p);
+        ////CRUD
+        ////Type Name();
+        ////Listeleme
+        //List<Language> List();
+        ////Ekleme
+        //void Insert(Language p);
+        ////Güncelleme
+        //void Update(Language p);    
+        ////Silme
+        //void Delete(Language p);
        
     }
 }

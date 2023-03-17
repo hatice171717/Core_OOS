@@ -8,9 +8,15 @@ namespace DataAccessLayer.Abstract
 {
     public interface IRepositoryDal<T>
     {
+        //CRUD
+        //Type Name();
+        //Listeleme
         List<T> List();
+        //Ekleme
         void Insert(T p);
+        //Silme
         void Delete(T p);
+        //Güncelle
         void Update(T p);
 
     }

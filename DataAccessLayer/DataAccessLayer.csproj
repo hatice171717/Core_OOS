@@ -51,8 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IBookDal.cs" />
+    <Compile Include="Abstract\IClassDal.cs" />
+    <Compile Include="Abstract\IEducatorDal.cs" />
     <Compile Include="Abstract\ILanguageDAL.cs" />
+    <Compile Include="Abstract\ILevelDal.cs" />
+    <Compile Include="Abstract\IOfficeDal.cs" />
     <Compile Include="Abstract\IRepositoryDal.cs" />
+    <Compile Include="Abstract\ISaleDal.cs" />
+    <Compile Include="Abstract\IStudentDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\LanguageRepository.cs" />
     <Compile Include="Migrations\202303142023207_tables_relation.cs" />

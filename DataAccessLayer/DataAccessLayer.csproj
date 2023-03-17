@@ -61,6 +61,7 @@
     <Compile Include="Abstract\ISaleDal.cs" />
     <Compile Include="Abstract\IStudentDal.cs" />
     <Compile Include="Concrete\Context.cs" />
+    <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="Concrete\Repositories\LanguageRepository.cs" />
     <Compile Include="Migrations\202303142023207_tables_relation.cs" />
     <Compile Include="Migrations\202303142023207_tables_relation.designer.cs">
@@ -74,14 +75,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
-      <Project>{6577a24f-0351-41f2-946f-7c1a440f37af}</Project>
-      <Name>BusinessLayer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Core_OOS\Core_OOS.csproj">
-      <Project>{ad850458-57ac-483f-9ca1-2588e449ed84}</Project>
-      <Name>Core_OOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{d5270986-1819-424f-8b71-220704588196}</Project>
       <Name>EntityLayer</Name>
